@@ -8,39 +8,50 @@ body {
     * {
         margin:0;
         padding: 0;
+        box-sizing: border-box;
     }
     /* apply styles to the <header> */
     header {
         padding: 20px 35px;
         background-color: #39a6b2;
     }
-
+        /* there are two headers, h1 and nav. h1 is the name Run Buddy and nav is the nav bar */
         header h1 {
             font-weight: bold;
             font-family: 36px;
             color: #fce138;
         }
-
+        /* The h1 header also has a specific <a> tag or hyperlink so the above code 
+        doesn't work unless you overide the default look for <a> tags. The text-decoration
+        as none allows you to remove the hypertext color and underline. 
+        Then, you assign the color to match h1 text coded above.  */
         header a {
             text-decoration: none;
             color: #fce138;
         }
 
+        /* Use the next style to send the nav info to the right instead of the default HTML left.*/
         header nav {
             float: right;
             margin: 7px 0;
         }
 
+        /* Now make the nav titles listed organize from L to R instead of the default top to bottom */
         header nav ul li {
             display: inline;
         }
 
+        /* Specify the hypertext <a> tag elements inside the list inside the unordered list 
+        in the navigation inside the header specifications as the following to give them each an
+        aesthetic spacing, and font style: */
         header nav ul li a {
             margin: 0 30px;
             font-weight: lighter;
             font-size: 22px;
         }
 
+        /* The header h1 now needs to become inline instead of a block to sit nicely
+        with the nav list you previously made inline. */
         header h1 {
             font-weight: bold;
             font-size: 36px;
@@ -48,3 +59,29 @@ body {
             margin: 0;
             display: inline;
         }
+    
+    /* Specify the style of the footer*/ 
+    footer {
+        background: #fce138;
+        width: 100%;
+        padding: 40px 35px
+    }
+
+    /* Style the left <h2> element and then the right <div> container holding the <a> elements */
+    footer h2 {
+        display: inline;
+        color: #024e76;
+        font-size: 30px;
+        margin: 0;
+    }
+
+    footer div {
+        float: right;
+        line-height: 1.5;
+        text-align: right;
+    }
+    
+    /* Now style the <a> element inside the <div> container. */
+    footer a {
+        color: #024e76;
+    }
