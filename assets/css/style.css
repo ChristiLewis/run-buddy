@@ -97,14 +97,22 @@ body {
         height: 600px;
         background-size: cover;
         background-position: center;
+        /* Add position relative to the hero section to position the hero-form. */
+        position:relative;
     }
     /* Hero Style End */
 
     /*--Hero-Form Style Start*/
     .hero-form {
+        /*Move border info to the top */
+        border: 3px solid #024e76;
         background-color: #fce138;
         padding: 20px;
         width: 500px;
         color: #024e76;
-        border: solid 3px #024e76;
+        /*Add position info after color */
+        position: absolute;
+        /* Change position from 0,0 to an exact location */
+        bottom: 120px;
+        right: 140px;
     }
