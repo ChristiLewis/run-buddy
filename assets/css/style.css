@@ -139,3 +139,18 @@ body {
         width: 100%;
         margin-bottom: 15px;
     }
+
+    /* Space between radio button labels -the 2nd value specified */
+    .hero-form label {
+        margin: 0 5px;
+    }
+
+    /* Style the Get Started button by making its CSS rule */
+    .hero-form button {
+        color: #fce138;
+        background-color: #024e76;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    /* HERO STYLES END */
