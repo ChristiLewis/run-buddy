@@ -224,3 +224,30 @@ body {
     .steps span {
         font-size: 38px;
     }
+
+    /*Next section styling for the trainers, first make an overview center text align default*/
+    .trainers {
+        text-align: center;
+    }
+
+    /*Article style for the trainer section. Note the section says plural trainers and the article is singular trainer.*/
+    .trainer {
+        width: 900px;
+        margin: 0 auto 30px auto;
+        background: #024e76;
+        color: #fce138;
+        /*We must add an overflow auto property declaration because both the <img> and <div> are floated
+        and the parent <article> couldn't interpret it, so showed itself. Since the parent is 0px tall, it showed nothing.*/
+        overflow: auto; 
+    }
+    /*Style elements in the trainer article such as the <img> and <div> called trainer-bio class.*/
+    .trainer img {
+        width: 35%;
+        float: left;
+    }
+
+    .trainer-bio {
+        padding: 35px;
+        float: left;
+        width: 65%;
+    }
