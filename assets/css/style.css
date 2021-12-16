@@ -155,6 +155,25 @@ body {
     }
     /* HERO STYLES END */
 
+    /* Adding section styles and making new class distinctions in the h2 elements of the sections to DRY the common section styles*/
+    .section-title {
+        font-size: 55px;
+        color: #024e76;
+        margin-bottom: 35px;
+        padding: 0 100px 20px 100px;
+        display:inline-block;
+        border-bottom: 3px solid; 
+    }
+
+    /*Here are the unique elements to each section, their border colors*/
+    .primary-border {
+        border-color: #fce138;
+    }
+
+    .secondary-border {
+        border-color: #39a6b2;
+    }
+   
     /* Adding What We Do Styles */
     .intro {
         text-align: center;
@@ -162,13 +181,7 @@ body {
 
     /* continue defining the stles moving to the h2, then p elements */
     .intro h2 {
-        font-size: 55px;
-        color: #024e76;
-        margin-bottom: 35px;
-        padding: 0 100px 20px 100px;
-        border-bottom: 3px solid;
-        border-color: #fce138;
-        display: inline-block;
+     /* removed for DRY best-practice*/
     }
 
     .intro p {
@@ -176,5 +189,38 @@ body {
         color: #39a6b2;
         width: 80%;
         font-size: 20px;
-        margin: 0 auto;
+        margin: 0 auto
+    }
+
+    .steps {
+        text-align: center;
+        background: #fce138;
+    }
+
+    /*.steps h2 was not made upon reading ahead about DRY Don't Repeat Yourself programming rule.
+    Here are CSS rules for repeated step elements*/
+
+    .steps div {
+        margin-bottom: 80px;
+    }
+
+    .steps img {
+        width: 15%;
+        margin: 10px 0;
+    }
+
+    .steps h3 {
+        color: #024e76;
+        font-size: 46px;
+        margin-top: 10px;
+    }
+
+    .steps p {
+        color: #39a6b2;
+        font-size: 23px;
+    }
+
+    /*Added an HTML <span> element to break up the font size in an h3 heading.  Span styling below. */
+    .steps span {
+        font-size: 38px;
     }
