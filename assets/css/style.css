@@ -116,3 +116,26 @@ body {
         bottom: 120px;
         right: 140px;
     }
+
+    /* Attempt to adjust the form's title-only the font-size and margin is needed */
+    .hero-form h3 {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    /* Text spacing for the <p> element Fill out this form...*/
+    .hero-form p {
+        margin: 5px 0 15px 0;
+    }
+
+    /*We adjusted the HTML file to give a unique class to the 
+    first three input lines called form-input to style here below.*/
+    .form-input {
+        border: 1px solid #024e76;
+        display: block;
+        padding: 7px 15px;
+        font-size: 16px;
+        color: #024e76;
+        width: 100%;
+        margin-bottom: 15px;
+    }
