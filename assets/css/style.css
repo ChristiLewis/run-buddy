@@ -251,3 +251,31 @@ body {
         float: left;
         width: 65%;
     }
+
+    /*style classes for left aligned trainer articles and right aligned article element*/
+    .text-left {
+        text-align: left;
+    }
+
+    .text-right {
+        text-align: right;
+    }
+
+
+    /* Styles for the plural trainers' heading, subheading and paragraph text.*/
+    .trainer-bio h3 {
+        font-size: 32px;
+        margin-bottom: 8px;
+    }
+
+    .trainer-bio h4 {
+        font-weight: lighter;
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+
+    .trainer-bio p {
+        font-size: 17px;
+        line-height: 1.3;
+    }
+    
