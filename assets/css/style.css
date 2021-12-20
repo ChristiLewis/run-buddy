@@ -4,278 +4,328 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-    /* add to remove the default margina and padding */
-    * {
-        margin:0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    /* apply styles to the <header> */
-    header {
-        padding: 20px 35px;
-        background-color: #39a6b2;
-    }
-        /* there are two headers, h1 and nav. h1 is the name Run Buddy and nav is the nav bar */
-        header h1 {
-            font-weight: bold;
-            font-family: 36px;
-            color: #fce138;
-        }
-        /* The h1 header also has a specific <a> tag or hyperlink so the above code 
-        doesn't work unless you overide the default look for <a> tags. The text-decoration
-        as none allows you to remove the hypertext color and underline. 
-        Then, you assign the color to match h1 text coded above.  */
-        header a {
-            text-decoration: none;
-            color: #fce138;
-        }
+/* add to remove the default margina and padding */
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* apply styles to the <header> */
+header {
+    padding: 20px 35px;
+    background-color: #39a6b2;
+}
+/* there are two headers, h1 and nav. h1 is the name Run Buddy and nav is the nav bar */
+header h1 {
+    font-weight: bold;
+    font-family: 36px;
+    color: #fce138;
+}
+/* The h1 header also has a specific <a> tag or hyperlink so the above code 
+doesn't work unless you overide the default look for <a> tags. The text-decoration
+as none allows you to remove the hypertext color and underline. 
+Then, you assign the color to match h1 text coded above.  */
+header a {
+    text-decoration: none;
+    color: #fce138;
+}
 
-        /* Use the next style to send the nav info to the right instead of the default HTML left.*/
-        header nav {
-            float: right;
-            margin: 7px 0;
-        }
+/* Use the next style to send the nav info to the right instead of the default HTML left.*/
+header nav {
+    float: right;
+    margin: 7px 0;
+}
 
-        /* Now make the nav titles listed organize from L to R instead of the default top to bottom */
-        header nav ul li {
-            display: inline;
-        }
+/* Now make the nav titles listed organize from L to R instead of the default top to bottom */
+header nav ul li {
+    display: inline;
+}
 
-        /* Specify the hypertext <a> tag elements inside the list inside the unordered list 
-        in the navigation inside the header specifications as the following to give them each an
-        aesthetic spacing, and font style: */
-        header nav ul li a {
-            margin: 0 30px;
-            font-weight: lighter;
-            font-size: 22px;
-        }
+/* Specify the hypertext <a> tag elements inside the list inside the unordered list 
+in the navigation inside the header specifications as the following to give them each an
+aesthetic spacing, and font style: */
+header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 22px;
+}
 
-        /* The header h1 now needs to become inline instead of a block to sit nicely
-        with the nav list you previously made inline. */
-        header h1 {
-            font-weight: bold;
-            font-size: 36px;
-            color: #fce138;
-            margin: 0;
-            display: inline;
-        }
+/* The header h1 now needs to become inline instead of a block to sit nicely
+with the nav list you previously made inline. */
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: #fce138;
+    margin: 0;
+    display: inline;
+}
     
-    /* Specify the style of the footer*/ 
-    footer {
-        background: #fce138;
-        width: 100%;
-        padding: 40px 35px
-    }
+/* Specify the style of the footer*/ 
+footer {
+    background: #fce138;
+    width: 100%;
+    padding: 40px 35px
+}
 
-    /* Style the left <h2> element and then the right <div> container holding the <a> elements */
-    footer h2 {
-        display: inline;
-        color: #024e76;
-        font-size: 30px;
-        margin: 0;
-    }
+/* Style the left <h2> element and then the right <div> container holding the <a> elements */
+footer h2 {
+    display: inline;
+    color: #024e76;
+    font-size: 30px;
+    margin: 0;
+}
 
-    footer div {
-        float: right;
-        line-height: 1.5;
-        text-align: right;
-    }
+footer div {
+    float: right;
+    line-height: 1.5;
+    text-align: right;
+}
     
-    /* Now style the <a> element inside the <div> container. */
-    footer a {
-        color: #024e76;
-    }
+/* Now style the <a> element inside the <div> container. */
+footer a {
+    color: #024e76;
+}
 
-    /*--Add a universal padding value for all sections */
-    section {
-        padding: 60px;
-    }
+/*--Add a universal padding value for all sections */
+section {
+    padding: 60px;
+}
 
     /* Hero Style Start */
-    .hero {
-        background-image: url("../images/hero-bg.jpg");
-        height: 600px;
-        background-size: cover;
-        background-position: center;
-        /* Add position relative to the hero section to position the hero-form. */
-        position:relative;
-    }
-    /* Hero Style End */
+.hero {
+    background-image: url("../images/hero-bg.jpg");
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    /* Add position relative to the hero section to position the hero-form. */
+    position:relative;
+}
+/* Hero Style End */
 
-    /*--Hero-Form Style Start*/
-    .hero-form {
-        /*Move border info to the top */
-        border: 3px solid #024e76;
-        background-color: #fce138;
-        padding: 20px;
-        width: 500px;
-        color: #024e76;
-        /*Add position info after color */
-        position: absolute;
-        /* Change position from 0,0 to an exact location */
-        bottom: 120px;
-        right: 140px;
-    }
+/*--Hero-Form Style Start*/
+.hero-form {
+    /*Move border info to the top */
+    border: 3px solid #024e76;
+    background-color: #fce138;
+    padding: 20px;
+    width: 500px;
+    color: #024e76;
+    /*Add position info after color */
+    position: absolute;
+    /* Change position from 0,0 to an exact location */
+    bottom: 120px;
+    right: 140px;
+}
 
-    /* Attempt to adjust the form's title-only the font-size and margin is needed */
-    .hero-form h3 {
-        font-size: 24px;
-        margin: 0;
-    }
+/* Attempt to adjust the form's title-only the font-size and margin is needed */
+.hero-form h3 {
+    font-size: 24px;
+     margin: 0;
+}
 
-    /* Text spacing for the <p> element Fill out this form...*/
-    .hero-form p {
-        margin: 5px 0 15px 0;
-    }
+/* Text spacing for the <p> element Fill out this form...*/
+.hero-form p {
+    margin: 5px 0 15px 0;
+}
 
-    /*We adjusted the HTML file to give a unique class to the 
-    first three input lines called form-input to style here below.*/
-    .form-input {
-        border: 1px solid #024e76;
-        display: block;
-        padding: 7px 15px;
-        font-size: 16px;
-        color: #024e76;
-        width: 100%;
-        margin-bottom: 15px;
-    }
+/*We adjusted the HTML file to give a unique class to the 
+first three input lines called form-input to style here below.*/
+.form-input {
+    border: 1px solid #024e76;
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: #024e76;
+    width: 100%;
+    margin-bottom: 15px;
+}
 
-    /* Space between radio button labels -the 2nd value specified */
-    .hero-form label {
-        margin: 0 5px;
-    }
+/* Space between radio button labels -the 2nd value specified */
+.hero-form label {
+    margin: 0 5px;
+}
 
-    /* Style the Get Started button by making its CSS rule */
-    .hero-form button {
-        color: #fce138;
-        background-color: #024e76;
-        border: none;
-        padding: 10px 20px;
-        font-size: 16px;
-    }
-    /* HERO STYLES END */
+/* Style the Get Started button by making its CSS rule */
+.hero-form button {
+    color: #fce138;
+    background-color: #024e76;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+/* HERO STYLES END */
 
-    /* Adding section styles and making new class distinctions in the h2 elements of the sections to DRY the common section styles*/
-    .section-title {
-        font-size: 55px;
-        color: #024e76;
-        margin-bottom: 35px;
-        padding: 0 100px 20px 100px;
-        display:inline-block;
-        border-bottom: 3px solid; 
-    }
+/* Adding section styles and making new class distinctions in the h2 elements of the sections to DRY the common section styles*/
+.section-title {
+    font-size: 55px;
+    color: #024e76;
+    margin-bottom: 35px;
+    padding: 0 100px 20px 100px;
+    display:inline-block;
+    border-bottom: 3px solid; 
+}
 
-    /*Here are the unique elements to each section, their border colors*/
-    .primary-border {
-        border-color: #fce138;
-    }
+/*Here are the unique elements to each section, their border colors*/
+.primary-border {
+    border-color: #fce138;
+}
 
-    .secondary-border {
-        border-color: #39a6b2;
-    }
+.secondary-border {
+    border-color: #39a6b2;
+}
    
-    /* Adding What We Do Styles */
-    .intro {
-        text-align: center;
-    }
+/* Adding What We Do Styles */
+.intro {
+    text-align: center;
+}
 
-    /* continue defining the stles moving to the h2, then p elements */
-    .intro h2 {
-     /* removed for DRY best-practice*/
-    }
+/* continue defining the stles moving to the h2, then p elements */
+.intro h2 {
+/* removed for DRY best-practice*/
+}
 
-    .intro p {
-        line-height: 1.7;
-        color: #39a6b2;
-        width: 80%;
-        font-size: 20px;
-        margin: 0 auto
-    }
+.intro p {
+    line-height: 1.7;
+    color: #39a6b2;
+    width: 80%;
+    font-size: 20px;
+    margin: 0 auto
+}
 
-    .steps {
-        text-align: center;
-        background: #fce138;
-    }
+.steps {
+    text-align: center;
+    background: #fce138;
+}
 
-    /*.steps h2 was not made upon reading ahead about DRY Don't Repeat Yourself programming rule.
-    Here are CSS rules for repeated step elements*/
+/*.steps h2 was not made upon reading ahead about DRY Don't Repeat Yourself programming rule.
+Here are CSS rules for repeated step elements*/
 
-    .steps div {
-        margin-bottom: 80px;
-    }
+.steps div {
+    margin-bottom: 80px;
+}
 
-    .steps img {
-        width: 15%;
-        margin: 10px 0;
-    }
+.steps img {
+    width: 15%;
+    margin: 10px 0;
+}
 
-    .steps h3 {
-        color: #024e76;
-        font-size: 46px;
-        margin-top: 10px;
-    }
+.steps h3 {
+    color: #024e76;
+    font-size: 46px;
+    margin-top: 10px;
+}
 
-    .steps p {
-        color: #39a6b2;
-        font-size: 23px;
-    }
+.steps p {
+    color: #39a6b2;
+    font-size: 23px;
+}
 
-    /*Added an HTML <span> element to break up the font size in an h3 heading.  Span styling below. */
-    .steps span {
-        font-size: 38px;
-    }
+/*Added an HTML <span> element to break up the font size in an h3 heading.  Span styling below. */
+.steps span {
+    font-size: 38px;
+}
 
-    /*Next section styling for the trainers, first make an overview center text align default*/
-    .trainers {
-        text-align: center;
-    }
+/*Next section styling for the trainers, first make an overview center text align default*/
+.trainers {
+    text-align: center;
+}
 
-    /*Article style for the trainer section. Note the section says plural trainers and the article is singular trainer.*/
-    .trainer {
-        width: 900px;
-        margin: 0 auto 30px auto;
-        background: #024e76;
-        color: #fce138;
-        /*We must add an overflow auto property declaration because both the <img> and <div> are floated
-        and the parent <article> couldn't interpret it, so showed itself. Since the parent is 0px tall, it showed nothing.*/
-        overflow: auto; 
-    }
-    /*Style elements in the trainer article such as the <img> and <div> called trainer-bio class.*/
-    .trainer img {
-        width: 35%;
-        float: left;
-    }
+/*Article style for the trainer section. Note the section says plural trainers and the article is singular trainer.*/
+.trainer {
+    width: 900px;
+    margin: 0 auto 30px auto;
+    background: #024e76;
+    color: #fce138;
+    /*We must add an overflow auto property declaration because both the <img> and <div> are floated
+    and the parent <article> couldn't interpret it, so showed itself. Since the parent is 0px tall, it showed nothing.*/
+    overflow: auto; 
+}
+/*Style elements in the trainer article such as the <img> and <div> called trainer-bio class.*/
+.trainer img {
+    width: 35%;
+    float: left;
+}
 
-    .trainer-bio {
-        padding: 35px;
-        float: left;
-        width: 65%;
-    }
+.trainer-bio {
+    padding: 35px;
+    float: left;
+    width: 65%;
+}
 
-    /*style classes for left aligned trainer articles and right aligned article element*/
-    .text-left {
-        text-align: left;
-    }
+/*style classes for left aligned trainer articles and right aligned article element*/
+.text-left {
+    text-align: left;
+}
 
-    .text-right {
-        text-align: right;
-    }
+.text-right {
+    text-align: right;
+}
 
+/* Styles for the plural trainers' heading, subheading and paragraph text.*/
+.trainer-bio h3 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
 
-    /* Styles for the plural trainers' heading, subheading and paragraph text.*/
-    .trainer-bio h3 {
-        font-size: 32px;
-        margin-bottom: 8px;
-    }
+.trainer-bio h4 {
+    font-weight: lighter;
+    font-size: 26px;
+    margin-bottom: 25px;
+}
 
-    .trainer-bio h4 {
-        font-weight: lighter;
-        font-size: 26px;
-        margin-bottom: 25px;
-    }
-
-    .trainer-bio p {
-        font-size: 17px;
-        line-height: 1.3;
-    }
+.trainer-bio p {
+    font-size: 17px;
+    line-height: 1.3;
+}
     
+/* REACH OUT STYLES START */
+.contact {
+    text-align: center;
+    background: #024e76;
+}
+
+/* Assign the h2 header for this contact section its color. */
+.contact h2 {
+    color: #fce138;
+}
+
+.contact-info iframe {
+    width: 400px;
+    height: 400px;
+}
+
+.contact-info div {
+    width: 400px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    margin: 30px 0 0 60px;
+    color: white;
+}
+
+.contact-info div h3 {
+    text-align: left;
+    color: #fce138;
+    font-size: 24px;
+}
+
+.contact-info div p {
+    font-size: 17px;
+    font-style: normal;
+    line-height: 1.7;
+}
+
+.contact-info div a {
+    text-decoration-line: underline;
+    color: #fce138;
+    font-style: normal;
+}
+
+.contact-info div address {
+    font-style: normal;
+}
+
+.heart {
+    color: red;
+    font-weight:normal;
+}
