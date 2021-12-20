@@ -303,28 +303,27 @@ Here are CSS rules for repeated step elements*/
     color: white;
 }
 
-.contact-info div h3 {
-    text-align: left;
+.contact-info h3 {
     color: #fce138;
-    font-size: 24px;
+    font-size: 32px;
 }
 
-.contact-info div p {
-    font-size: 17px;
-    font-style: normal;
-    line-height: 1.7;
+.contact-info p, .contact-info address {
+    margin: 20px 0;
+    line-height: 1.5;
+    font-size: 19px;
+    font-style: normal;  
 }
 
-.contact-info div a {
+.contact-info a {
     text-decoration-line: underline;
     color: #fce138;
     font-style: normal;
 }
 
-.contact-info div address {
-    font-style: normal;
-}
+/* REACH OUT STYLES END */
 
+/* heart emoji fix*/
 .heart {
     color: red;
     font-weight:normal;
