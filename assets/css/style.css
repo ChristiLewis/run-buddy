@@ -4,7 +4,7 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-/* add to remove the default margina and padding */
+/* add to remove the default margin and padding */
 * {
     margin:0;
     padding: 0;
@@ -15,13 +15,13 @@ header {
     padding: 20px 35px;
     background-color: #39a6b2;
 }
-/* there are two headers, h1 and nav. h1 is the name Run Buddy and nav is the nav bar */
+/* there are two header children, h1 and nav. h1 is the name Run Buddy and nav is the nav bar */
 header h1 {
     font-weight: bold;
     font-family: 36px;
     color: #fce138;
 }
-/* The h1 header also has a specific <a> tag or hyperlink so the above code 
+/* The header also has a specific <a> tag or hyperlink so the above code 
 doesn't work unless you overide the default look for <a> tags. The text-decoration
 as none allows you to remove the hypertext color and underline. 
 Then, you assign the color to match h1 text coded above.  */
