@@ -239,33 +239,68 @@ first three input lines called form-input to style here below.*/
     background: #fce138;
 }
 
+/* New .step styling for 2.0 flexbox styling */
+.step {
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+    border-bottom: 1px solid #39a6b2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
 /*.steps h2 was not made upon reading ahead about DRY Don't Repeat Yourself programming rule.
 Here are CSS rules for repeated step elements*/
-
-.steps div {
-    margin-bottom: 80px;
-}
-
-.steps img {
-    width: 15%;
-    margin: 10px 0;
-}
-
-.steps h3 {
+/* Removed .steps div for 2.0 flexbox styling */
+/* Removed .steps img for 2.0 flexbox styling */
+/* changed steps h3 to step h3 for 2.0 flexbox styling */
+.step h3 {
     color: #024e76;
     font-size: 46px;
-    margin-top: 10px;
+    /*removed margin-top for 2.0 flexbox styling */
+    /* add flex property showing flex grow and basis values */
+    flex: 1 30%;
 }
 
-.steps p {
+/* Add CSS flex property style for step-info to show flex grow and basis */
+.step-info {
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* changed steps p to step-text p and font-size from 23 to 18 for 2.0 flexbox styling */
+.step-text p {
     color: #39a6b2;
-    font-size: 23px;
+    font-size: 18 px;
+}
+
+/* New .step-text h4 for 2.0 flexbox styling */
+.step-text h4 {
+    font-size: 26px;
+    line-height: 1.5;
+    color: #024e76;
+}
+
+/* Add version 2.0 flexbox styles for nested children */
+.step-img {
+    flex: 1 12%;
+    margin-right: 20px;
+}
+
+.step-text {
+    flex: 12;
+}
+
+.step-img img {
+    max-width: 100%;
 }
 
 /*Added an HTML <span> element to break up the font size in an h3 heading.  Span styling below. */
-.steps span {
-    font-size: 38px;
-}
+/* Removed .steps span for 2.0 flexbox styling */
 
 /*Next section styling for the trainers, first make an overview center text align default*/
 .trainers {
