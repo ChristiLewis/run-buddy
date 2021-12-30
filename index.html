@@ -89,16 +89,29 @@
     <!--what we do section add an id then add a class as intro to style in CSS-->
     <section id="what-we-do" class="intro"> 
         <!--Add a class to the <h2> elements in the sections to keep the CSS code DRY-->
-        <h2 class="section-title primary-border"> What We Do</h2>
-        <!--Adding top filler text-->
-        <p>
+        <!--Version 2.0 flexbox styling wrap h2s inside their own div classes-->
+        <div class="flex-row">            
+            <h2 class="section-title primary-border"> 
+            What We Do
+            </h2>
+        </div>
+
+            <!--Adding top filler text and 2.0 div class for p-->
+        <div class="flex-row">
+            <p>
             butcher selfies chambray shabby chic gentrufy readymade yr Echo Park XOXO Tumblr normcore Banksy direct tade Blue Bottle chillwave you probably haven't heard of them single-origin coffee Vice fanny pack fixie Odd Future Austin fingerstache pickled twee synth Wes Anderson Thundercats viral bitters flannel meggings narwhal Marfa Schlitz sustainable Intelligentsia umami deep v craft
-        </p>
+            </p>
+        </div>
     </section>
 
     <!--what you do section-->
-    <section id="what-you-do" class="steps"> 
-        <h2 class="section-title secondary-border">What You Do</h2>
+    <section id="what-you-do" class="steps">
+        <!--Version 2.0 flexbox styling wrap h2s inside their own div classes-->
+        <div class="flex-row"> 
+            <h2 class="section-title secondary-border">
+            What You Do
+            </h2>
+        </div>
         <!--Adding section <div> elements and each has its own <h3> and <p> children-->
         <div>
             <!--Adding svg icon images before every <h3> in each <div>-->
@@ -128,9 +141,12 @@
 
     <!--meet the trainers section-->
     <Section id="your-trainers" class="trainers">
-        <h2 class="section-title primary-border"> 
+        <!--Version 2.0 flexbox styling wrap h2s inside their own div classes-->
+        <div class="flex-row">
+            <h2 class="section-title primary-border"> 
             Meet the Trainers
-        </h2>
+            </h2>
+        </div>
         <!--First trainer's bio-->
         <article class="trainer">
             <img src="./assets/images/trainer-1.jpg" alt="Arron Stephens in his workout clothes, ready to pump iron."/>
@@ -172,7 +188,12 @@
     <!--reach out section add id to link nav href for tab link and style class called contact -->
     <section id="reach-out" class="contact">
         <!--Add h2 class for style colors and alignment similar to other sections-->
-        <h2 class="section-title secondary-border">Reach Out</h2>
+        <!--Version 2.0 flexbox styling wrap h2s inside their own div classes-->
+        <div class="flex-row">
+            <h2 class="section-title secondary-border">
+                Reach Out
+            </h2>
+        </div>
 
         <!--Add an interactive maps function with a default address for the contact container-->
         <div class="contact-info">
@@ -219,7 +240,6 @@
                 </address>
                 </div>
         </div>
-
     
     </section>
 

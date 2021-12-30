@@ -198,10 +198,16 @@ first three input lines called form-input to style here below.*/
 .section-title {
     font-size: 55px;
     color: #024e76;
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    display:inline-block;
+    /* Remove margin-bottom revise to margin for 2.0 flexbox specs */
+    margin: 0 auto 35px auto;
+    /* Remove and revise padding to padding-bottom for 2.0 flexbox specs */
+    padding-bottom: 20px;
+    /* add text align for 2.0 flexbox specs */
+    text-align: center;
+    /* Remove display for 2.0 flexbox specs */
     border-bottom: 3px solid; 
+    /* Add width for 2.0 flexbox specs */
+    width: 50%;
 }
 
 /*Here are the unique elements to each section, their border colors*/
@@ -214,25 +220,22 @@ first three input lines called form-input to style here below.*/
 }
    
 /* Adding What We Do Styles */
-.intro {
-    text-align: center;
-}
-
+/* Remove .intro styling for 2.0 flexbox specs */
 /* continue defining the stles moving to the h2, then p elements */
-.intro h2 {
-/* removed for DRY best-practice*/
-}
+/* intro h2 removed for DRY best-practice*/
 
 .intro p {
     line-height: 1.7;
     color: #39a6b2;
     width: 80%;
     font-size: 20px;
-    margin: 0 auto
+    margin: 0 auto;
+    /* Add text-align for 2.0 flexbox specs */
+    text-align: center;
 }
 
 .steps {
-    text-align: center;
+    /* Remove text-align for 2.0 flexbox specs */
     background: #fce138;
 }
 
@@ -266,7 +269,7 @@ Here are CSS rules for repeated step elements*/
 
 /*Next section styling for the trainers, first make an overview center text align default*/
 .trainers {
-    text-align: center;
+    /* Remove text-align for 2.0 flexbox specs */
 }
 
 /*Article style for the trainer section. Note the section says plural trainers and the article is singular trainer.*/
@@ -319,7 +322,7 @@ Here are CSS rules for repeated step elements*/
     
 /* REACH OUT STYLES START */
 .contact {
-    text-align: center;
+    /* Remove text-align for 2.0 flexbox specs */
     background: #024e76;
 }
 
@@ -366,4 +369,9 @@ Here are CSS rules for repeated step elements*/
 .heart {
     color: red;
     font-weight:normal;
+}
+
+/* Adding flex-row class style for 2.0 flexbox specs */
+.flex-row {
+    display: flex;
 }
