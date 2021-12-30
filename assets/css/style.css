@@ -10,14 +10,20 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-/* apply styles to the <header> */
+/* apply styles to the <header>
+2.0 update-adding display flex  and justify content space between*/
 header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 20px 35px;
     background-color: #39a6b2;
 }
-/* there are two header children, h1 and nav. h1 is the name Run Buddy and nav is the nav bar */
+/* there are two header children, h1 and nav. h1 is the name Run Buddy and nav is the nav bar 
+Update for 2.0 addedd margin and remove display inline-but I only have it in header nav ul li */
 header h1 {
     font-weight: bold;
+    margin: 0;
     font-family: 36px;
     color: #fce138;
 }
@@ -30,9 +36,9 @@ header a {
     color: #fce138;
 }
 
-/* Use the next style to send the nav info to the right instead of the default HTML left.*/
+/* Use the next style to send the nav info to the right instead of the default HTML left.
+Update 2.0 remove float right=NA with flexbox*/
 header nav {
-    float: right;
     margin: 7px 0;
 }
 
