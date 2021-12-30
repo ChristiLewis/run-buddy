@@ -71,23 +71,27 @@ header h1 {
     display: inline;
 }
     
-/* Specify the style of the footer*/ 
+/* Specify the style of the footer* 
+2.0 added flexbox specs/*/
 footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     background: #fce138;
     width: 100%;
     padding: 40px 35px
 }
 
-/* Style the left <h2> element and then the right <div> container holding the <a> elements */
+/* Style the left <h2> element and then the right <div> container holding the <a> elements
+2.0 remove display inline for flexbox specs */
 footer h2 {
-    display: inline;
     color: #024e76;
     font-size: 30px;
     margin: 0;
 }
 
+/* remove float right for flexbox specs */
 footer div {
-    float: right;
     line-height: 1.5;
     text-align: right;
 }
