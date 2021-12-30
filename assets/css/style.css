@@ -107,29 +107,53 @@ section {
 }
 
     /* Hero Style Start */
+/* overall declarations in 1.0 version, but position and height removed for 2.0 flexbox specs 
+additions of */    
 .hero {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     background-image: url("../images/hero-bg.jpg");
-    height: 600px;
+    /* height removed 2.0 version */
     background-size: cover;
     background-position: center;
-    /* Add position relative to the hero section to position the hero-form. */
-    position:relative;
+    /* Add position relative to the hero section to position the hero-form. NA with 2.0 flexbox */
+}
+
+/* Add hero-cta styles for version 2.0 */
+.hero-cta {
+    width: 35%;
+    text-align: right;
+    margin: 3.5%;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+/* Add hero-cta header h2 style for 2.0 */
+.hero-cta h2 {
+    font-style: italic;
+    font-size: 55px;
+    color: #fce138;
 }
 /* Hero Style End */
 
-/*--Hero-Form Style Start*/
+/*--Hero-Form Style Start version 2.0 deletions noted below*/
 .hero-form {
     /*Move border info to the top */
     border: 3px solid #024e76;
     background-color: #fce138;
     padding: 20px;
-    width: 500px;
+   /* width removed and replaced for 2.0 NA with flexbox */
+    width: 40%;
     color: #024e76;
     /*Add position info after color */
-    position: absolute;
+     /* position removed 2.0 NA with flexbox */
     /* Change position from 0,0 to an exact location */
-    bottom: 120px;
-    right: 140px;
+    /* bottom removed 2.0 NA with flexbox */
+     /* right removed 2.0 NA with flexbox */
+     /* margin added for 2.0 */
+     margin: 3.5%;
 }
 
 /* Attempt to adjust the form's title-only the font-size and margin is needed */
