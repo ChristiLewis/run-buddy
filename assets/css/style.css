@@ -42,18 +42,23 @@ header nav {
     margin: 7px 0;
 }
 
-/* Now make the nav titles listed organize from L to R instead of the default top to bottom */
-header nav ul li {
-    display: inline;
+/* Now make the nav titles listed organize from L to R instead of the default top to bottom remove header nav ul li {
+    display: inline; when applying flexbox in version 2.0 and make a new header nav ul*/
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
 }
 
 /* Specify the hypertext <a> tag elements inside the list inside the unordered list 
 in the navigation inside the header specifications as the following to give them each an
-aesthetic spacing, and font style: */
+aesthetic spacing, and font style: Also for 2.0 we update the font-size to 1.55 vw or viewport width*/
 header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
-    font-size: 22px;
+    font-size: 1.55vw;
 }
 
 /* The header h1 now needs to become inline instead of a block to sit nicely
