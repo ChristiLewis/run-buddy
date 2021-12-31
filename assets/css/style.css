@@ -56,7 +56,8 @@ header nav ul {
 in the navigation inside the header specifications as the following to give them each an
 aesthetic spacing, and font style: Also for 2.0 we update the font-size to 1.55 vw or viewport width*/
 header nav ul li a {
-    margin: 0 30px;
+    /* replaced margin with padding for mediaquery styling 3.0 */
+    padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
 }
@@ -118,6 +119,8 @@ additions of */
     background-size: cover;
     background-position: center;
     /* Add position relative to the hero section to position the hero-form. NA with 2.0 flexbox */
+    /* Add align-items flex-start for mediaquery version 3.0 */
+    align-items: flex-start;
 }
 
 /* Add hero-cta styles for version 2.0 */
@@ -127,7 +130,8 @@ additions of */
     margin: 3.5%;
     color: #fff;
     font-size: 18px;
-    line-height: 1.3;
+    /* Change l-h from 1.3 to 1.2 for mediaquery version 3.0 */
+    line-height: 1.2;
 }
 
 /* Add hero-cta header h2 style for 2.0 */
@@ -196,7 +200,8 @@ first three input lines called form-input to style here below.*/
 
 /* Adding section styles and making new class distinctions in the h2 elements of the sections to DRY the common section styles*/
 .section-title {
-    font-size: 55px;
+    /* Change f-s from 55 to 48 for mediaquery version 3.0 */
+    font-size: 48px;
     color: #024e76;
     /* Remove margin-bottom revise to margin for 2.0 flexbox specs */
     margin: 0 auto 35px auto;
@@ -452,4 +457,17 @@ Here are CSS rules for repeated step elements*/
 /* Adding flex-row class style for 2.0 flexbox specs */
 .flex-row {
     display: flex;
+}
+
+/* Adding media query test note-we removed h1 from the HTML the header is h2*/
+@media screen and (max-width: 980px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+   
+}
+
+@media screen and (max-width: 575px) {
+    
 }
