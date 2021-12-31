@@ -183,42 +183,47 @@
             Meet the Trainers
             </h2>
         </div>
-        <!--First trainer's bio-->
-        <article class="trainer">
-            <img src="./assets/images/trainer-1.jpg" alt="Arron Stephens in his workout clothes, ready to pump iron."/>
-            <!--Add utility class text-left to div for CSS to keep most styles general and text-align specific-->
-            <div class="trainer-bio text-left">
-                <h3>Arron Stephens</h3>
-                <h4>Speed / Strength</h4>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat nam fugiat provident eos maxime. Quasi, porro temporibus? Eveniet ratione, fuga hic, sint corporis consequuntur consectetur tenetur tempore, nisi quasi eaque.
-                </p>
-            </div>
-        </article>
+        <div class="trainers">
+            <!--First trainer's bio-->
+            <article class="trainer">
+                <img src="./assets/images/trainer-1.jpg" alt="Arron Stephens in his workout clothes, ready to pump iron."/>
+                <!--Add utility class text-left to div for CSS to keep most styles general and text-align specific-->
+                <!--Remove text direction class, it is NA for 2.0 layout-->
+                <div class="trainer-bio">
+                    <h3 class="trainer-name">Arron Stephens</h3>
+                    <h4 class="trainer-role">Speed / Strength</h4>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat nam fugiat provident eos maxime. Quasi, porro temporibus? Eveniet ratione, fuga hic, sint corporis consequuntur consectetur tenetur tempore, nisi quasi eaque.
+                    </p>
+                </div>
+            </article>
 
-        <!--second trainer's bio-->
-        <article class="trainer">
-            <div class="trainer-bio text-right">
-                <h3>Joanna Gill</h3>
-                <h4>Endurance</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt eaque ullam maxime inventore mollitia fuga voluptatum labore repudiandae necessitatibus doloribus commodi at perspiciatis, sapiente nobis ad, facilis, voluptas dolorum repellendus.
+            <!--second trainer's bio-->
+            <article class="trainer">
+                <!--Move image to the top for flexbox ordering.  We placed it last so the image would appear to the right of the text-->
+                <img src="./assets/images/trainer-2.jpg" alt="Joanna Gill cooling off after a workout"/>
+                <!--Remove text direction class, it is NA for 2.0 layout-->
+                <div class="trainer-bio">
+                    <h3 class="trainer-name">Joanna Gill</h3>
+                    <h4 class="trainer-role">Endurance</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt eaque ullam maxime inventore mollitia fuga voluptatum labore repudiandae necessitatibus doloribus commodi at perspiciatis, sapiente nobis ad, facilis, voluptas dolorum repellendus.
+                    </p>
+                </div>
+            </article>
 
-                </p>
-            </div>
-            <img src="./assets/images/trainer-2.jpg" alt="Joanna Gill cooling off after a workout"/>
-        </article>
-
-        <!--third trainer bio-->
-        <article class="trainer">
-            <img src="./assets/images/trainer-3.jpg" alt="Harry Smith wearing a headband and lifting comically small pink weights" />
-            <div class="trainer-bio text-left">
-                <h3>Harry "the Headband" Smith</h3>
-                <h4>Strength</h4>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, dolorem inventore veniam tenetur facilis quam accusamus, aliquid voluptatibus ipsam ducimus ratione quisquam, earum eum ut architecto consequuntur minima commodi dolor.
-                </p>
-            </div>
-        </article>
+            <!--third trainer bio-->
+            <article class="trainer">
+                <img src="./assets/images/trainer-3.jpg" alt="Harry Smith wearing a headband and lifting comically small pink weights" />
+                <!--Remove text direction class, it is NA for 2.0 layout-->
+                <div class="trainer-bio">
+                    <h3 class="trainer-name">Harry "the Headband" Smith</h3>
+                    <h4 class="trainer-role">Strength</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, dolorem inventore veniam tenetur facilis quam accusamus, aliquid voluptatibus ipsam ducimus ratione quisquam, earum eum ut architecto consequuntur minima commodi dolor.
+                    </p>
+                </div>
+            </article>
+        </div>
     </Section>
 
     <!--reach out section add id to link nav href for tab link and style class called contact -->
