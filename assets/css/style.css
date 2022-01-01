@@ -18,20 +18,20 @@ header {
     justify-content: space-between;
     padding: 20px 35px;
     background-color: #39a6b2;
-    /* Added sticky positions and background styles from .hero to header for 3.0 version */
+    /* Added sticky positions and background styles from .hero to header for 4.0 version */
     position: -webkit-sticky;
     position:sticky;
     top: 0;
     background-image: url("../images/hero-bg.jpg");
     background-size: cover;
-    /*Change b-p from center to 80% for 3.0 */
+    /*Change b-p from center to 80% for 4.0 */
     background-position: 80%;
     /*Add b-attachment fixed to match image with hero section */
     background-attachment: fixed;
 }
 /* there are two header children, h1 and nav. h1 is the name Run Buddy and nav is the nav bar 
 Update for 2.0 addedd margin and remove display inline-but I only have it in header nav ul li 
-Adding text shadow for 3.0*/
+Adding text shadow for 4.0*/
 header h1 {
     font-weight: bold;
     margin: 0;
@@ -72,7 +72,7 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
-    /*adding text shadow 3.0*/
+    /*adding text shadow 4.0*/
     text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
@@ -131,7 +131,7 @@ additions of */
     background-image: url("../images/hero-bg.jpg");
     /* height removed 2.0 version */
     background-size: cover;
-    /*Change b-p from center to 80% for 3.0 */
+    /*Change b-p from center to 80% for 4.0 */
     background-position: 80%;
     /*Add b-attachment fixed to match image with header section */
     background-attachment: fixed;
@@ -165,7 +165,7 @@ additions of */
 .hero-form {
     /*Move border info to the top */
     border: 3px solid #024e76;
-    /*  Change hex to rgb to include transparency for 3.0 */
+    /*  Change hex to rgb to include transparency for 4.0 */
     background-color: rgba(252,225,56, 0.8);
     padding: 20px;
    /* width removed and replaced for 2.0 NA with flexbox */
@@ -178,7 +178,7 @@ additions of */
      /* right removed 2.0 NA with flexbox */
      /* margin added for 2.0 */
      margin: 3.5%;
-     /*add shadow and rounded corners for 3.0 */
+     /*add shadow and rounded corners for 4.0 */
      box-shadow: 0 0 10px rgba(0,0,0,0.5);
      border-radius: 15px;
 }
@@ -204,8 +204,10 @@ first three input lines called form-input to style here below.*/
     color: #024e76;
     width: 100%;
     margin-bottom: 15px;
-    /* Add rounded corners for 3.0 */
+    /* Add rounded corners for 4.0 */
     border-radius: 10px;
+    /* Adding rgba for advanced CSS after mediaqueries below for 4.0 */
+    background-color: rgba(255,255,255, 0.75);
 }
 
 /* Space between radio button labels -the 2nd value specified */
@@ -220,7 +222,7 @@ first three input lines called form-input to style here below.*/
     border: none;
     padding: 10px 20px;
     font-size: 16px;
-    /* Add rounded corners for 3.0 */
+    /* Add rounded corners for 4.0 */
     border-radius: 10px;
 }
 /* HERO STYLES END */
@@ -276,7 +278,7 @@ first three input lines called form-input to style here below.*/
     margin: 50px auto;
     padding-bottom: 50px;
     width: 80%;
-    border-bottom: 1px solid #39a6b2;
+    /* remove border bottom from here to make it a last child pseudo-class for 4.0-see below */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -461,8 +463,9 @@ Here are CSS rules for repeated step elements*/
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
-    /* Add rounded corners for 3.0 */
+    /* Add rounded corners and pseudoclass for 4.0 */
     border-radius: 10px;
+    background-color: rgba(255,255,255, 0.75);
 }
 
 .contact-form button {
@@ -473,7 +476,7 @@ Here are CSS rules for repeated step elements*/
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
-    /* Add rounded corners for 3.0 */
+    /* Add rounded corners for 4.0 */
     border-radius: 10px;
 }
 
@@ -495,7 +498,7 @@ Here are CSS rules for repeated step elements*/
     header {
         padding-bottom: 0;
         justify-content: center;
-        /* Adding a relative position to negate the sticky header rule for 3.0 with smaller screens */
+        /* Adding a relative position to negate the sticky header rule for 4.0 with smaller screens */
         position: relative;
     }
 
@@ -599,4 +602,46 @@ Here are CSS rules for repeated step elements*/
     .contact-form {
         order: 3;
     }
+}
+/* Adding pseudoclasses for 4.0 */
+header nav ul li a:hover {
+    background: #fce138;
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+.hero-form button:hover {
+    background-color: #39a6b2;
+}
+
+.contact-form button:hover {
+    color: #fce138;
+    background: #39a6b2;
+}
+
+/* Adding a pseudoclasses for buttons to change for 4.0 */
+
+.contact-form button:focus {
+
+}
+
+.form-input:focus {
+    background-color: rgba(255,255,255, 1.0);
+    outline: none;
+}
+
+/* Contact form CSS pseudoclas added for 4.0 adv. CSS aesthetics */
+.contact-form input, .contact-form textarea:focus {
+    background-color: rgba(255,255,255, 1.0);
+    outline: none;
+}
+
+.step:last-child {
+    border-bottom: 1px solid #39a6b2;
+}
+
+/* bottom border added to other children for 4.0 */
+.step:not(:last-child) {
+    border-bottom: 1px solid #39a6b2;
 }
