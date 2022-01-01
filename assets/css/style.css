@@ -18,6 +18,16 @@ header {
     justify-content: space-between;
     padding: 20px 35px;
     background-color: #39a6b2;
+    /* Added sticky positions and background styles from .hero to header for 3.0 version */
+    position: -webkit-sticky;
+    position:sticky;
+    top: 0;
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    /*Change b-p from center to 80% for 3.0 */
+    background-position: 80%;
+    /*Add b-attachment fixed to match image with hero section */
+    background-attachment: fixed;
 }
 /* there are two header children, h1 and nav. h1 is the name Run Buddy and nav is the nav bar 
 Update for 2.0 addedd margin and remove display inline-but I only have it in header nav ul li 
@@ -121,7 +131,10 @@ additions of */
     background-image: url("../images/hero-bg.jpg");
     /* height removed 2.0 version */
     background-size: cover;
-    background-position: center;
+    /*Change b-p from center to 80% for 3.0 */
+    background-position: 80%;
+    /*Add b-attachment fixed to match image with header section */
+    background-attachment: fixed;
     /* Add position relative to the hero section to position the hero-form. NA with 2.0 flexbox */
     /* Add align-items flex-start for mediaquery version 3.0 */
     align-items: flex-start;
@@ -152,7 +165,8 @@ additions of */
 .hero-form {
     /*Move border info to the top */
     border: 3px solid #024e76;
-    background-color: #fce138;
+    /*  Change hex to rgb to include transparency for 3.0 */
+    background-color: rgba(252,225,56, 0.8);
     padding: 20px;
    /* width removed and replaced for 2.0 NA with flexbox */
     width: 40%;
@@ -164,6 +178,9 @@ additions of */
      /* right removed 2.0 NA with flexbox */
      /* margin added for 2.0 */
      margin: 3.5%;
+     /*add shadow and rounded corners for 3.0 */
+     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+     border-radius: 15px;
 }
 
 /* Attempt to adjust the form's title-only the font-size and margin is needed */
@@ -187,6 +204,8 @@ first three input lines called form-input to style here below.*/
     color: #024e76;
     width: 100%;
     margin-bottom: 15px;
+    /* Add rounded corners for 3.0 */
+    border-radius: 10px;
 }
 
 /* Space between radio button labels -the 2nd value specified */
@@ -201,6 +220,8 @@ first three input lines called form-input to style here below.*/
     border: none;
     padding: 10px 20px;
     font-size: 16px;
+    /* Add rounded corners for 3.0 */
+    border-radius: 10px;
 }
 /* HERO STYLES END */
 
@@ -440,6 +461,8 @@ Here are CSS rules for repeated step elements*/
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
+    /* Add rounded corners for 3.0 */
+    border-radius: 10px;
 }
 
 .contact-form button {
@@ -450,6 +473,8 @@ Here are CSS rules for repeated step elements*/
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
+    /* Add rounded corners for 3.0 */
+    border-radius: 10px;
 }
 
 /* REACH OUT STYLES END */
@@ -470,6 +495,8 @@ Here are CSS rules for repeated step elements*/
     header {
         padding-bottom: 0;
         justify-content: center;
+        /* Adding a relative position to negate the sticky header rule for 3.0 with smaller screens */
+        position: relative;
     }
 
     header h2 {
