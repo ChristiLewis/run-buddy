@@ -65,20 +65,29 @@
                 <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input"/>
 
                 <!--Add a <p> as a form question parent to be answered with a pair of radio button children for yes or no-->
-                <p>
+                <!--Adding CSS styling on top of default buttons to keep them accessible for HTML screen readers-->
+                    <p>
                     Have you worked out with a trainer before?
-                    <input type="radio" name="trainer-confirm" id="trainer-yes"/>
-                    <label for="trainer-yes">Yes</label>
-                    <input type="radio" name="trainer-confirm" id="trainer-no"/>
-                    <label for="trainer-no">No</label>
+                    <!--span class added for 4.0-->
+                    <span class="radio-wrapper">
+                        <input type="radio" name="trainer-confirm" id="trainer-yes"/>
+                        <label for="trainer-yes">Yes</label>
+                    </span>
+                    <!--span class added for 4.0-->
+                    <span class="radio-wrapper">
+                        <input type="radio" name="trainer-confirm" id="trainer-no"/>
+                        <label for="trainer-no">No</label>
+                    </span>
                 </p>
 
                 <!--Add the legal age question and its checkbox in a new <p> parent-->
                 <p>
-                    <label for="checkbox">
-                        I acknowledge that I am at least 18 years of age.
-                    </label>
-                    <input type="checkbox" name="age-confirm" id="checkbox"/>
+                    <!--span class added for 4.0-->
+                    <span class="checkbox-wrapper">
+                        <!--input moved before label for 4.0-->
+                        <input type="checkbox" name="age-confirm" id="checkbox"/>
+                        <label for="checkbox">I acknowledge that I am at least 18 years of age.</label>
+                    </span>
                 </p>
                 <!--Add the submit button-->
                 <button type="submit">
