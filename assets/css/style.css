@@ -25,13 +25,13 @@ header {
     justify-content: space-between;
     padding: 20px 35px;
     background-color: var(--tertiary-color);
-    /* Added sticky positions and background styles from .hero to header for 4.0 version */
+    /* Added sticky positions and background styles from .hero to header for 2.4.0 version */
     position: -webkit-sticky;
     position:sticky;
     top: 0;
     background-image: url("../images/hero-bg.jpg");
     background-size: cover;
-    /*Change b-p from center to 80% for 4.0 */
+    /*Change b-p from center to 80% for 2.4.0 */
     background-position: 80%;
     /*Add b-attachment fixed to match image with hero section */
     background-attachment: fixed;
@@ -40,7 +40,7 @@ header {
 }
 /* there are two header children, h1 and nav. h1 is the name Run Buddy and nav is the nav bar 
 Update for 2.0 addedd margin and remove display inline-but I only have it in header nav ul li 
-Adding text shadow for 4.0*/
+Adding text shadow for 2.4.0*/
 header h1 {
     font-weight: bold;
     margin: 0;
@@ -77,11 +77,11 @@ header nav ul {
 in the navigation inside the header specifications as the following to give them each an
 aesthetic spacing, and font style: Also for 2.0 we update the font-size to 1.55 vw or viewport width*/
 header nav ul li a {
-    /* replaced margin with padding for mediaquery styling 3.0 */
+    /* replaced margin with padding for mediaquery styling 2.3.0 */
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
-    /*adding text shadow 4.0*/
+    /*adding text shadow 2.4.0*/
     text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
@@ -140,12 +140,12 @@ additions of */
     background-image: url("../images/hero-bg.jpg");
     /* height removed 2.0 version */
     background-size: cover;
-    /*Change b-p from center to 80% for 4.0 */
+    /*Change b-p from center to 80% for 2.4.0 */
     background-position: 80%;
     /*Add b-attachment fixed to match image with header section */
     background-attachment: fixed;
     /* Add position relative to the hero section to position the hero-form. NA with 2.0 flexbox */
-    /* Add align-items flex-start for mediaquery version 3.0 */
+    /* Add align-items flex-start for mediaquery version 2.3.0 */
     align-items: flex-start;
 }
 
@@ -156,9 +156,9 @@ additions of */
     margin: 3.5%;
     color: #fff;
     font-size: 18px;
-    /* Change l-h from 1.3 to 1.2 for mediaquery version 3.0 */
+    /* Change l-h from 1.3 to 1.2 for mediaquery version 2.3.0 */
     line-height: 1.2;
-    /*adding text shadow 3.0*/
+    /*adding text shadow 2.3.0*/
     text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
@@ -174,7 +174,7 @@ additions of */
 .hero-form {
     /*Move border info to the top */
     border: 3px solid var(--secondary-color);
-    /*  Change hex to rgb to include transparency for 4.0 */
+    /*  Change hex to rgb to include transparency for 2.4.0 */
     background-color: rgba(252,225,56, 0.8);
     padding: 20px;
    /* width removed and replaced for 2.0 NA with flexbox */
@@ -187,7 +187,7 @@ additions of */
      /* right removed 2.0 NA with flexbox */
      /* margin added for 2.0 */
      margin: 3.5%;
-     /*add shadow and rounded corners for 4.0 */
+     /*add shadow and rounded corners for 2.4.0 */
      box-shadow: 0 0 10px rgba(0,0,0,0.5);
      border-radius: 15px;
 }
@@ -213,9 +213,9 @@ first three input lines called form-input to style here below.*/
     color: var(--secondary-color);
     width: 100%;
     margin-bottom: 15px;
-    /* Add rounded corners for 4.0 */
+    /* Add rounded corners for 2.4.0 */
     border-radius: 10px;
-    /* Adding rgba for advanced CSS after mediaqueries below for 4.0 */
+    /* Adding rgba for advanced CSS after mediaqueries below for 2.4.0 */
     background-color: rgba(255,255,255, 0.75);
 }
 
@@ -231,14 +231,14 @@ first three input lines called form-input to style here below.*/
     border: none;
     padding: 10px 20px;
     font-size: 16px;
-    /* Add rounded corners for 4.0 */
+    /* Add rounded corners for 2.4.0 */
     border-radius: 10px;
 }
 /* HERO STYLES END */
 
 /* Adding section styles and making new class distinctions in the h2 elements of the sections to DRY the common section styles*/
 .section-title {
-    /* Change f-s from 55 to 48 for mediaquery version 3.0 */
+    /* Change f-s from 55 to 48 for mediaquery version 2.3.0 */
     font-size: 48px;
     color: var(--secondary-color);
     /* Remove margin-bottom revise to margin for 2.0 flexbox specs */
@@ -287,7 +287,7 @@ first three input lines called form-input to style here below.*/
     margin: 50px auto;
     padding-bottom: 50px;
     width: 80%;
-    /* remove border bottom from here to make it a last child pseudo-class for 4.0-see below */
+    /* remove border bottom from here to make it a last child pseudo-class for 2.4.0-see below */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -472,7 +472,7 @@ Here are CSS rules for repeated step elements*/
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
-    /* Add rounded corners and pseudoclass for 4.0 */
+    /* Add rounded corners and pseudoclass for 2.4.0 */
     border-radius: 10px;
     background-color: rgba(255,255,255, 0.75);
 }
@@ -485,7 +485,7 @@ Here are CSS rules for repeated step elements*/
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
-    /* Add rounded corners for 4.0 */
+    /* Add rounded corners for 2.4.0 */
     border-radius: 10px;
 }
 
@@ -507,7 +507,7 @@ Here are CSS rules for repeated step elements*/
     header {
         padding-bottom: 0;
         justify-content: center;
-        /* Adding a relative position to negate the sticky header rule for 4.0 with smaller screens */
+        /* Adding a relative position to negate the sticky header rule for 2.4.0 with smaller screens */
         position: relative;
     }
 
@@ -612,7 +612,7 @@ Here are CSS rules for repeated step elements*/
         order: 3;
     }
 }
-/* Adding pseudoclasses for 4.0 */
+/* Adding pseudoclasses for 2.4.0 */
 header nav ul li a:hover {
     background: var(--primary-color);
     color: var(--secondary-color);
@@ -629,7 +629,7 @@ header nav ul li a:hover {
     background: var(--tertiary-color);
 }
 
-/* Adding a pseudoclasses for buttons to change for 4.0 */
+/* Adding a pseudoclasses for buttons to change for 2.4.0 */
 
 .contact-form button:focus {
 
@@ -640,7 +640,7 @@ header nav ul li a:hover {
     outline: none;
 }
 
-/* Contact form CSS pseudoclas added for 4.0 adv. CSS aesthetics */
+/* Contact form CSS pseudoclas added for 2.4.0 adv. CSS aesthetics */
 .contact-form input, .contact-form textarea:focus {
     background-color: rgba(255,255,255, 1.0);
     outline: none;
@@ -650,7 +650,7 @@ header nav ul li a:hover {
     border-bottom: 1px solid var(--tertiary-color);
 }
 
-/* bottom border added to other children for 4.0 */
+/* bottom border added to other children for 2.4.0 */
 .step:not(:last-child) {
     border-bottom: 1px solid var(--tertiary-color);
 }
